@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#100a17">
+  <title>The High Hand · Madam Nef</title>
+  <meta name="description" content="Enter Madam Nef’s chamber in Stygia. A collection of in-character questions for the five members of Pathos.">
+  <link rel="icon" href="assets/sigil.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/madam-nef.webp" as="image">
+  <link rel="preload" href="assets/nef-reactions/shadow.webp" as="image">
+  <link rel="preload" href="assets/cards/question-front.webp" as="image">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="chamber awaiting-entry" id="chamber">
+    <section class="intro" id="intro" aria-label="The High Hand introduction"><img class="intro-shadow" src="assets/nef-reactions/shadow.webp" alt="Madam Nef waits as unformed swirling shadows at her tarot table"><div class="intro-mist" aria-hidden="true"></div><button id="enter-chamber" class="enter-chamber" aria-label="Enter The High Hand"><img class="intro-title" src="assets/high-hand-title.webp" alt="The High Hand" fetchpriority="high"><span class="intro-invitation">CLICK TO ENTER</span><span class="intro-ornament" aria-hidden="true">✧</span></button></section>
+    <div id="table-world" class="table-world" inert>
+    <img class="room" src="assets/madam-nef.webp" alt="Madam Nef watches from behind her tarot table, surrounded by candlelight and purple curtains." fetchpriority="high">
+    <img id="nef-layer-a" class="nef-reaction" alt="" aria-hidden="true"><img id="nef-layer-b" class="nef-reaction" alt="" aria-hidden="true">
+    <div id="nef-eyes" class="nef-eyes" aria-hidden="true" hidden><i class="eye-light eye-left"></i><i class="eye-light eye-right"></i></div>
+    <div class="art-interference" aria-hidden="true"></div><div class="art-scanlines" aria-hidden="true"></div><div class="shade" aria-hidden="true"></div><div class="frame" aria-hidden="true"></div>
+    <div class="appearance-veil" aria-hidden="true"></div><div class="departure-mist" aria-hidden="true"></div>
+    <div class="motes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Madam Nef home"><span class="brand-sigil" aria-hidden="true">✧</span><span><span class="eyebrow">THE PATHOS READINGS</span><span class="brand-name">Madam Nef</span></span></a>
+    </header>
+    <section class="welcome" id="welcome" aria-label="Begin a reading"><div class="welcome-mark" aria-hidden="true">✧</div><p class="eyebrow">FIVE THREADS. ONE JOURNEY.</p><h1>Choose your deck.</h1><p>Draw a card.<br>Let me hear your answer.</p></section>
+    <section id="card-slot" class="card-slot" aria-label="The drawn question card" aria-busy="false" hidden>
+      <div id="question-card" class="question-card">
+        <div class="card-back card-face" aria-hidden="true"><img id="drawn-back" src="assets/cards/corvidae-back.webp" alt=""></div>
+        <div class="card-front card-face"><div class="front-border" aria-hidden="true"></div><div class="card-top"><span aria-hidden="true">✧</span><span id="question-character">CORVIDAE</span><span class="card-rule" aria-hidden="true"></span></div><div class="card-question"><p id="question-text"></p></div><div class="card-bottom"><span aria-hidden="true">◇</span><span>MADAM NEF ASKS</span><span aria-hidden="true">◇</span></div><button id="answer-card" class="answer-card" disabled>Answer this card <span aria-hidden="true">↗</span></button></div>
+      </div>
+    </section>
+    <button id="answer-archive" class="answer-archive" aria-label="Open the sealed answers"><span class="vortex-art"><img src="assets/answer-vortex.webp" alt="A black vortex surrounded by swirling cards and violet smoke"><span class="vortex-ring" aria-hidden="true"></span></span><span class="archive-name">THE SEALED HAND</span><span id="archive-count" class="archive-count">No answers sealed</span></button>
+    <div id="reading-announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+    <footer class="deck-table"><p id="table-prompt" class="deck-prompt">Draw from a deck</p><div class="characters" id="characters" aria-label="Draw a question for a member of Pathos"></div><button id="finish-visit" class="finish-visit secondary" hidden>Finish this visit without recording ↗</button></footer>
+    <div class="table-meta"><button id="sound-open" class="prepare-link" aria-haspopup="dialog">Sound</button><button id="prepare-open" class="prepare-link">Preparation</button></div>
+    <div class="toast" id="toast" role="status"></div>
+    </div>
+  </main>
+
+  <dialog id="sound-dialog" class="dialog sound-dialog" aria-labelledby="sound-title">
+    <div class="dialog-header"><h2 id="sound-title">Sound</h2><button class="close" data-close="sound-dialog" aria-label="Close sound settings">×</button></div>
+    <div class="volume-label"><label for="music-volume">Music</label><output id="music-volume-value" for="music-volume">25%</output></div><input id="music-volume" type="range" min="0" max="100" step="1" value="25">
+    <div class="volume-label"><label for="effects-volume">Cards &amp; rituals</label><output id="effects-volume-value" for="effects-volume">60%</output></div><input id="effects-volume" type="range" min="0" max="100" step="1" value="60">
+    <label class="mute-label"><input id="audio-muted" type="checkbox"> Mute all sound</label>
+  </dialog>
+
+  <dialog id="archive-dialog" class="dialog wide-dialog archive-dialog">
+    <div class="dialog-header"><div><p class="eyebrow">WORDS GIVEN TO THE DARK</p><h2>The Sealed Hand</h2></div><button class="close" data-close="archive-dialog" aria-label="Close sealed answers">×</button></div>
+    <div class="dialog-toolbar"><label class="sr-only" for="archive-filter">Filter sealed answers</label><select id="archive-filter"><option value="all">All of Pathos</option></select><button id="archive-export" class="secondary">Export answers</button></div>
+    <p class="dialog-hint">Choose an entry to unfold its question and answer.</p><div id="archive-list" class="journal-list"></div>
+  </dialog>
+
+  <dialog id="prepare-dialog" class="dialog prepare-dialog">
+    <div class="dialog-header"><div><p class="eyebrow">BEFORE THE READING</p><h2>Preparation</h2></div><button class="close" data-close="prepare-dialog" aria-label="Return to the table">×</button></div>
+    <p class="dialog-hint">The question bank and saved answers open here, on this screen. Use these tools before the reading, then return to the table.</p>
+    <div class="preparation-actions"><button id="bank-open" class="secondary">Edit question decks</button><button id="journal-open" class="secondary">Saved answers <span id="journal-count" class="count">0</span></button><button id="answer-open" class="secondary" disabled>Record this answer</button><button id="empty-answers-open" class="secondary danger-button" disabled>Empty all answers</button></div>
+    <div class="preparation-options"><label for="theme">Draw from this theme</label><select id="theme"><option>All themes</option><option>Identity</option><option>Desire</option><option>Bonds</option><option>Power</option><option>Fate</option></select><label class="shared-label"><input type="checkbox" id="shared"> Include shared Pathos questions</label><label class="shared-label"><input type="checkbox" id="black-enabled" checked> Allow occasional black cards</label></div>
+    <p id="save-status" class="dialog-hint">Answers stay in this browser. Export a backup from saved answers.</p><button id="return-table" class="primary">Return to the table ↗</button>
+  </dialog>
+
+  <dialog id="empty-answers-dialog" class="dialog" aria-labelledby="empty-answers-title" aria-describedby="empty-answers-description">
+    <div class="dialog-header"><h2 id="empty-answers-title">Empty all answers?</h2><button class="close" data-close="empty-answers-dialog" aria-label="Cancel clearing answers">×</button></div>
+    <p id="empty-answers-description">This removes saved answers, private notes and unfinished answer drafts for all five characters from this browser. Your question decks and drawing history stay as they are.</p>
+    <p class="dialog-hint">This cannot be undone. You can download a backup from Saved answers first.</p>
+    <div class="form-footer"><button class="secondary" data-close="empty-answers-dialog" autofocus>Keep my answers</button><button id="empty-answers-confirm" class="secondary danger-button">Empty all answers</button></div>
+  </dialog>
+
+  <dialog id="answer-dialog" class="dialog answer-dialog">
+    <div class="dialog-header"><div><p class="eyebrow">THE THREAD YOU LEAVE</p><h2 id="answer-title">Record an answer</h2></div><button class="close" data-close="answer-dialog" aria-label="Close answer">×</button></div>
+    <p class="quoted-question" id="answer-question"></p>
+    <form id="answer-form"><label for="answer-text">The character’s answer</label><textarea id="answer-text" rows="6" maxlength="15000" placeholder="Record their words, a short summary or a thought to return to…"></textarea><div id="answer-private-notes"><label for="answer-notes">Notes for the next reading <span class="optional">optional</span></label><textarea id="answer-notes" rows="3" maxlength="5000" placeholder="A contradiction, a question to revisit, a detail Madam Nef notices…"></textarea></div><div class="form-footer"><p>Saved on this device. Export the journal to keep a copy.</p><button id="answer-submit" type="submit" class="primary">Seal this answer <span aria-hidden="true">↗</span></button></div></form>
+  </dialog>
+
+  <dialog id="journal-dialog" class="dialog wide-dialog">
+    <div class="dialog-header"><div><p class="eyebrow">WHAT THE CARDS CANNOT HEAR</p><h2>The reading journal</h2></div><button class="close" data-close="journal-dialog" aria-label="Close journal">×</button></div>
+    <div class="dialog-toolbar"><label class="sr-only" for="journal-filter">Filter journal by character</label><select id="journal-filter"><option value="all">All of Pathos</option></select><button id="export-journal" class="secondary">Export journal</button></div>
+    <p class="dialog-hint">Answers are kept in this browser. These are records for your future readings; no fortunes are decided for the characters.</p>
+    <div id="journal-list" class="journal-list"></div>
+  </dialog>
+
+  <dialog id="bank-dialog" class="dialog wide-dialog">
+    <div class="dialog-header"><div><p class="eyebrow">QUESTIONS BEFORE FORTUNES</p><h2>Madam Nef’s questions</h2></div><button class="close" data-close="bank-dialog" aria-label="Close questions">×</button></div>
+    <div class="dialog-toolbar"><label class="sr-only" for="bank-filter">Question deck</label><select id="bank-filter"></select><label class="sr-only" for="bank-search">Search questions</label><input id="bank-search" type="search" placeholder="Search the questions…"><button id="add-question" class="secondary">+ Add question</button></div>
+    <p id="bank-summary" class="dialog-hint"></p><div id="bank-list" class="bank-list"></div>
+  </dialog>
+
+  <dialog id="edit-dialog" class="dialog">
+    <div class="dialog-header"><div><p class="eyebrow">A QUESTION IN HER VOICE</p><h2 id="edit-title">Add a question</h2></div><button class="close" data-close="edit-dialog" aria-label="Close question editor">×</button></div>
+    <form id="edit-form"><label for="edit-character">Question deck</label><select id="edit-character"></select><label for="edit-theme">Theme</label><select id="edit-theme"><option>Identity</option><option>Desire</option><option>Bonds</option><option>Power</option><option>Fate</option></select><label for="edit-text">Madam Nef asks…</label><textarea id="edit-text" rows="5" required maxlength="650" placeholder="A question addressed to the character…"></textarea><p class="dialog-hint">Edits and added questions stay in this browser. Export a backup from the journal.</p><div class="form-footer"><button type="submit" class="primary">Keep this question <span aria-hidden="true">↗</span></button></div></form>
+  </dialog>
+  <script type="module" src="app.mjs"></script>
+</body></html>

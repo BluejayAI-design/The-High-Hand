@@ -1,0 +1,205 @@
+{
+  "baseline_art_bytes": 7638988,
+  "unused_bytes_removed": 217726,
+  "existing_bytes_saved": 0,
+  "new_source_png_bytes": 19192674,
+  "new_lossless_webp_bytes": 13130156,
+  "assets": [
+    {
+      "file": "dist/assets/high-hand-title.webp",
+      "source_bytes": 184900,
+      "final_bytes": 184900,
+      "pixels_unchanged": true,
+      "pixel_sha256": "de78bc721253fc790c929a7d5751be37d6c9618169e27ef5f046d3978adafc3a",
+      "action": "retain-smaller-existing-file"
+    },
+    {
+      "file": "dist/assets/answer-vortex.webp",
+      "source_bytes": 277024,
+      "final_bytes": 277024,
+      "pixels_unchanged": true,
+      "pixel_sha256": "374168d0482e3655826eb97442221d9456530ce1e183a18ae329c7946abbf9e8",
+      "action": "retain-smaller-existing-file"
+    },
+    {
+      "file": "dist/assets/madam-nef.webp",
+      "source_bytes": 389856,
+      "final_bytes": 389856,
+      "pixels_unchanged": true,
+      "pixel_sha256": "4741732733669a73c0f0f400e6f15fd2f8f81ae9dff6b68a1885a35579a92483",
+      "action": "retain-smaller-existing-file"
+    },
+    {
+      "file": "dist/assets/cards/frostheart-back.webp",
+      "source_bytes": 789644,
+      "final_bytes": 789644,
+      "pixels_unchanged": true,
+      "pixel_sha256": "f21f5e074d984c07e5d7d54768998078fadf2f6773fe6a03ec76cada8e5a1769",
+      "action": "retain-smaller-existing-file"
+    },
+    {
+      "file": "dist/assets/cards/elas-back.webp",
+      "source_bytes": 815152,
+      "final_bytes": 815152,
+      "pixels_unchanged": true,
+      "pixel_sha256": "1b2ea26672bd67d3f1cc3330753d25eb86f9e41a6dec8b8215916abda96fc23d",
+      "action": "retain-smaller-existing-file"
+    },
+    {
+      "file": "dist/assets/cards/corvidae-back.webp",
+      "source_bytes": 714598,
+      "final_bytes": 714598,
+      "pixels_unchanged": true,
+      "pixel_sha256": "c39a81d3536704a2486997ed50772214b4bd9362ad0560250263ae6edf5c1b2a",
+      "action": "retain-smaller-existing-file"
+    },
+    {
+      "file": "dist/assets/cards/firebrand-back.webp",
+      "source_bytes": 770324,
+      "final_bytes": 770324,
+      "pixels_unchanged": true,
+      "pixel_sha256": "12127eab9dc94bd62ff12f0942b8d850b3220bd8a65933d5fcc03a7433e0c272",
+      "action": "retain-smaller-existing-file"
+    },
+    {
+      "file": "dist/assets/cards/question-front.webp",
+      "source_bytes": 359682,
+      "final_bytes": 359682,
+      "pixels_unchanged": true,
+      "pixel_sha256": "346c537fbb2afb9eb6443a26ce5d3dc840ca3854a2592f51d78b1de3bd209c3b",
+      "action": "retain-smaller-existing-file"
+    },
+    {
+      "file": "dist/assets/cards/rov-back.webp",
+      "source_bytes": 742718,
+      "final_bytes": 742718,
+      "pixels_unchanged": true,
+      "pixel_sha256": "6e099bf1f1aaf18bd0c925be0b269661edb959d3040468b8b73c91adfee62924",
+      "action": "retain-smaller-existing-file"
+    },
+    {
+      "file": "dist/assets/nef-reactions/listen-reflective.webp",
+      "source_bytes": 343446,
+      "final_bytes": 343446,
+      "pixels_unchanged": true,
+      "pixel_sha256": "112b0019240cc157d2707d81f47663b4a79520526b3d7e9e2e393d1730f20cb2",
+      "action": "retain-smaller-existing-file"
+    },
+    {
+      "file": "dist/assets/nef-reactions/draw-knowing.webp",
+      "source_bytes": 346708,
+      "final_bytes": 346708,
+      "pixels_unchanged": true,
+      "pixel_sha256": "892b43da78251de961fa8387a3ff657df5442c0686f690d44e9bd166abf6410b",
+      "action": "retain-smaller-existing-file"
+    },
+    {
+      "file": "dist/assets/nef-reactions/listen-attentive.webp",
+      "source_bytes": 336368,
+      "final_bytes": 336368,
+      "pixels_unchanged": true,
+      "pixel_sha256": "4474d1361871d764cb1eb81e3c34c6474e4c13ae874f431b8f09b69a8cf58523",
+      "action": "retain-smaller-existing-file"
+    },
+    {
+      "file": "dist/assets/nef-reactions/draw-curious.webp",
+      "source_bytes": 336988,
+      "final_bytes": 336988,
+      "pixels_unchanged": true,
+      "pixel_sha256": "5892cbf273879d245aaf06a9f440a5708dcc772f6cf188a0f6345ad1236f0482",
+      "action": "retain-smaller-existing-file"
+    },
+    {
+      "file": "dist/assets/nef-reactions/shadow.webp",
+      "source_bytes": 305970,
+      "final_bytes": 305970,
+      "pixels_unchanged": true,
+      "pixel_sha256": "7f3d22ce1b3b79a9db571757f33c530ef73b4b34bde872f92c4b9c91241209c7",
+      "action": "retain-smaller-existing-file"
+    },
+    {
+      "file": "dist/assets/nef-reactions/seal-beckoning.webp",
+      "source_bytes": 367298,
+      "final_bytes": 367298,
+      "pixels_unchanged": true,
+      "pixel_sha256": "a4cb95ecee4a04eee106d2427396ac791500bcd640337382ab9544fffed4a6ca",
+      "action": "retain-smaller-existing-file"
+    },
+    {
+      "file": "dist/assets/nef-reactions/seal-satisfied.webp",
+      "source_bytes": 340298,
+      "final_bytes": 340298,
+      "pixels_unchanged": true,
+      "pixel_sha256": "8173a129db886c4fafc82f3bdbc70c78397571c79cb7b36dbe9b9ed287e8bd13",
+      "action": "retain-smaller-existing-file"
+    },
+    {
+      "file": "dist/assets/nef-reactions/idle-calm.webp",
+      "source_bytes": 2250961,
+      "final_bytes": 1609386,
+      "pixels_unchanged": true,
+      "pixel_sha256": "d6ba88137ea7bd2fdc2ad1e7b25e8eabc76827037343d5d990726a83f08e2c0f",
+      "action": "lossless-from-generated-png"
+    },
+    {
+      "file": "dist/assets/nef-reactions/idle-shuffle.webp",
+      "source_bytes": 2255566,
+      "final_bytes": 1621224,
+      "pixels_unchanged": true,
+      "pixel_sha256": "f8f38f0d3641cee88658e6ed55dc6509582ad60bfdc6284bb540082409188e51",
+      "action": "lossless-from-generated-png"
+    },
+    {
+      "file": "dist/assets/nef-reactions/pose-inviting.webp",
+      "source_bytes": 2223899,
+      "final_bytes": 1589198,
+      "pixels_unchanged": true,
+      "pixel_sha256": "b7df1da220274a44d0b28c15e51031f13acdaac67c206a7e4357fe2699b7fed9",
+      "action": "lossless-from-generated-png"
+    },
+    {
+      "file": "dist/assets/nef-reactions/pose-amused.webp",
+      "source_bytes": 2256744,
+      "final_bytes": 1607196,
+      "pixels_unchanged": true,
+      "pixel_sha256": "36d99f5764be69c1afe4df020fa0d94e7b94c32587ebc5e995e6b5f84d2d59a4",
+      "action": "lossless-from-generated-png"
+    },
+    {
+      "file": "dist/assets/nef-reactions/black-scrutiny.webp",
+      "source_bytes": 2236617,
+      "final_bytes": 1609278,
+      "pixels_unchanged": true,
+      "pixel_sha256": "8a03e8d3f8f4ead69eeb8af0b9a881f1304b8f6fb9dc881d3fcd00bf6a69f5b3",
+      "action": "lossless-from-generated-png"
+    },
+    {
+      "file": "dist/assets/cards/black-back.webp",
+      "source_bytes": 3207249,
+      "final_bytes": 1940526,
+      "pixels_unchanged": true,
+      "pixel_sha256": "0c73dc16b7f87f4c04f5fd3539387a3cd09a1aaaeda94b8531f92fd718168b05",
+      "action": "lossless-from-generated-png"
+    },
+    {
+      "file": "dist/assets/cards/black-front.webp",
+      "source_bytes": 2458778,
+      "final_bytes": 1501014,
+      "pixels_unchanged": true,
+      "pixel_sha256": "4ac113f4ce0ce6605ea84392c26608aaf51aa696f85e7d368ecfcbb73972d244",
+      "action": "lossless-from-generated-png"
+    },
+    {
+      "file": "dist/assets/nef-reactions/farewell.webp",
+      "source_bytes": 2302860,
+      "final_bytes": 1652334,
+      "pixels_unchanged": true,
+      "pixel_sha256": "6c3b8ed67d955eb19a8c4eb8895c9efc9f635988ac6537c2020b511b3b252834",
+      "action": "lossless-from-generated-png"
+    }
+  ],
+  "final_art_bytes": 20551418,
+  "expanded_before_optimisation_bytes": 26831662,
+  "bytes_saved_vs_expanded_sources": 6280244,
+  "all_output_pixel_hashes_verified": true
+}

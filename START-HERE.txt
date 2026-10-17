@@ -1,0 +1,35 @@
+THE HIGH HAND — MADAM NEF
+Complete app export: artwork, audio, questions, source and checks.
+
+WINDOWS
+1. Extract the entire ZIP into a folder.
+2. Double-click Start-High-Hand.bat.
+3. Your browser opens the app. Keep the launcher window open while playing.
+
+Python 3 must be installed. No additional Python packages are needed.
+This is a browser app, not a Windows installer.
+
+MAC / LINUX
+With Python 3 installed, open a terminal in this folder and run:
+python3 start.py
+
+The app serves only on your own computer at http://127.0.0.1:8765.
+All artwork, sounds and code are included. No internet connection is needed
+once Python is installed and the ZIP is extracted.
+
+ANSWERS
+Answers stay in the browser where they were recorded. Your answers from the
+online app are not contained in this ZIP. To transfer them, use Preparation
+> Saved answers > Backup & restore > Download backup in the online app,
+then Restore backup in this local copy. Question edits can be transferred
+with the same backup. Use the same browser and local address each time.
+
+One card per character is allowed in each visit. The last card stays available
+until you seal its answer or choose Finish this visit without recording.
+Nef then bids farewell and returns to the title. Starting another visit keeps
+saved answers and question history.
+
+APP FILES
+The complete browser app is in dist/.
+Source notes, artwork prompts and tests are included.
+The online app remains at https://madam-nef.boss-4088.chatgpt.site
